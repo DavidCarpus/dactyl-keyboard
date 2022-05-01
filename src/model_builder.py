@@ -9,22 +9,22 @@ base = shape_config
 config_options = [
     {
         'name': '{}', 'vars': ['ball_side'], # set ball side to both, other half can come from other renders
-        'vals': ['both'],
+        'vals': ['right'],
         'val_names': ['']
     },
     {
         'name': '{}x{}', 'vars': ['nrows', 'ncols'],
-        'vals':[(4, 5), (5, 6)],
-        # 'vals': [(4, 5), (4, 6), (5, 6), (6, 6)],
+        'vals':[(4, 6)],
     },
     {
         'name': '{}PLT', 'vars': ['plate_style'],
-        'vals': ['NOTCH', 'HS_NOTCH'],
+        'vals': ['HS_NUB'],
         # 'vals': ['NUB', 'NOTCH', 'HS_NUB', 'HS_NOTCH'],
     },
     {
         'name': '{}TMB', 'vars': ['thumb_style'],
-        'vals': ['DEFAULT', 'MINIDOX', 'TRACKBALL_ORBYL'],
+         'vals': ['TRACKBALL_ORBYL'],
+    #    'vals': ['DEFAULT', 'MINIDOX', 'TRACKBALL_ORBYL'],
         'val_names': ['DEF', 'MDOX', 'ORBY']
         # 'vals': ['DEFAULT', 'MINI', 'CARBONFET', 'MINIDOX'],
         # 'val_names': ['DEF', 'MINI', 'CF', 'MDOX']
@@ -36,8 +36,9 @@ config_options = [
     },
     {
         'name': '{}CTRL', 'vars': ['controller_mount_type'],
-        'vals': ['EXTERNAL', 'RJ9_USB_WALL'],
-        'val_names': ['EXT', 'DEF'],
+        # 'vals': ['EXTERNAL', 'RJ9_USB_WALL'],
+         'vals': ['EXTERNAL'],
+       'val_names': ['EXT', 'DEF'],
     },
 ]
 
